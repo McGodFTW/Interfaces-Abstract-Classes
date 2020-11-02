@@ -12,6 +12,13 @@ public class TestInsurance {
 		
 		Scanner input = new Scanner(System.in);
 		
+		for(int i = 0; i < h.length; i++) {
+			
+			h[i] = new Health();
+			l[i] = new Life();
+			
+		}
+		
 		do {
 			
 			h[0].print();
@@ -25,7 +32,7 @@ public class TestInsurance {
 					
 					if(hCounter < 5) {
 						
-						h[lCounter] = new Health();
+						
 						
 						System.out.println("What policy would you like:");
 						h[lCounter].setType(input.next());
@@ -49,7 +56,7 @@ public class TestInsurance {
 				
 					if(lCounter < 5) {
 						
-						l[lCounter] = new Life();
+						
 						
 						System.out.println("What policy would you like:");
 						l[lCounter].setType(input.next());
